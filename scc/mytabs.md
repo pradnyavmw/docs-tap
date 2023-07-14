@@ -1,3 +1,6 @@
+import markdown
+md = markdown.Markdown(extensions=['pymdownx.blocks.tab'])
+
 === "Tab 1"
     Markdown **content**.
 

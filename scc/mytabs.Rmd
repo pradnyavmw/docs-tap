@@ -1,16 +1,30 @@
-## Results {.tabset}
+---
+title: "Tabset Demonstration"
+output: html_document
+---
 
-### Tab One
-CowSample <- data.frame (CowID = c(sample(400:599, 100, replace=FALSE)),
-                         Week1 = c(runif(100, min=10, max=20)),
-                         Week2 = c(runif(100, min=15, max=25)),
-                         Week3 = c(runif(100, min=18, max=28)),
-                         dairy = c(sample(1:5, 100, replace=TRUE)))
-head(CowSample) 
+```{r}
+#| include = FALSE
+library(dplyr)
+library(ggplot2)
+```
 
-### Tab Two
+There is a negative correlation between horsepower and miles per gallon.
 
-## {-}
+## Tab {.tabset}
 
-With the above unnumbered (`{-}`) and empty section header,
-we can end the tabset and continue to write more paragraphs.
+### Plot
+
+```{r}
+mtcars %>% 
+  ggplot(aes(x = hp, y = mpg)) +
+  geom_point()
+```
+
+### Table
+
+```{r}
+#| collapse = TRUE
+mtcars %>% 
+  glimpse()
+```

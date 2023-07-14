@@ -1,48 +1,38 @@
-
-You can turn parallel sections to tabs in `html_document` output.
-
-## Results {.tabset}
-
-### Tab One
-
-### Tab Two
-
-## {-}
-
-
+---
+output:
+  html_document:
+    theme: paper
+    highlight: tango
+    number_sections: false
+    toc: false
+    toc_float: false
+---
+# Result Discussion {.tabset}
+We will discuss results here
 
 ## Quarterly Results {.tabset}
 This content pertains to Quarterly Results
 
-::: {#quarterly-product .section .level3}
+<div id="quarterly-product" class="section level3">
 ### By Product
-
 Quarterly perfomance by Products
-:::
+</div>
 
-::: {#quarterly-region .section .level3}
+<div id="quarterly-region" class="section level3">
 ### By Region
-
 Quarterly perfomance by Region
-:::
+</div>
 
-Final Words about Quarterly Results
+Some other words about Quarterly Results
 
-
-## Yearly Results {.tabset}
-This content pertains to Yearly Results
-
-::: {#yearly-product .section .level3}
+<div id="q-product" class="section level3">
 ### By Product
+Quarterly perfomance by Products
+</div>
 
-Yearly perfomance by Products
-:::
-
-::: {#yearly-region .section .level3}
+<div id="q-region" class="section level3">
 ### By Region
+Quarterly perfomance by Region
+</div>
 
-Yearly perfomance by Region
-:::
-
-Final Words about Yearly Results
-
+Final words about Quarterly Results

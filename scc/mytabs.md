@@ -5,14 +5,13 @@ output: html_document
 
 You can turn parallel sections to tabs in `html_document` output.
 
-## Results {.tabset}
+## Results {.tabset .tabset-pills}
 
-### Plots
+### One Thing
 
-We show a scatter plot in this section.
- 
+Sentences.
 
-### Tables
+### Context {.active}
 
-We show the data in this tab.
- 
+Other sentences.
+

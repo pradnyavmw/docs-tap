@@ -1,17 +1,11 @@
----
-title: Use tabs to organize content
-output: html_document
----
 
 You can turn parallel sections to tabs in `html_document` output.
 
-## Results {.tabset .tabset-pills}
+## Results {.tabset}
 
-### One Thing
+### Tab One
 
-Sentences.
+### Tab Two
 
-### Context {.active}
-
-Other sentences.
+## {-}
 
